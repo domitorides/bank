@@ -1,0 +1,23 @@
+
+Запуск: python app.py
+
+1
+Запрос: curl 0.0.0.0:8080/cards/45719942416578578
+Результат: BIN: 457199, Brand: VISA, Type: DEBIT, Issuer: PBS INTERNATIONAL A/S, Country: Denmark, Latitude: 56.2639
+           BIN: 45719942, Brand: VISA, Type: DEBIT, Issuer: DIBA BANK, Country: Denmark, Latitude: 56.2639
+
+2
+Запрос: curl 0.0.0.0:8080/cards/4w719942416578578
+Результат: 500 Internal Server Error
+
+3
+Запрос: curl 0.0.0.0:8080/cards/213123213213123213719942416578578
+Результат: 500 Internal Server Error
+
+4
+Запрос: curl 0.0.0.0:8080/cards/45719
+Результат: 500 Internal Server Error
+
+5
+Запрос: curl 0.0.0.0:8080/cards/18002112345678912
+Результат: BIN: 180021, Brand: JCB, Type: CREDIT, Issuer: JCB CO., LTD., Country: Japan, Latitude: 36.2048
